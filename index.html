@@ -5,6 +5,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
  
@@ -35,10 +37,20 @@
 					<section id="banner" class="major">
 						<div class="inner">
 							<header class="major">
-								<h1 class="writing">&lt;title&gt;Mark Eugene G. Manuel&lt;/title&gt;</h1>	
+
+
+								<div id="typed-strings">
+									<h1>A <strong class="strongTitle">Developer?</strong></h1>
+									<h1>A <strong class="strongTitle">Vampire</strong> who stays up late at night?</h1>
+									<h1>I'm <strong class="strongTitle">Mark Eugene</strong> a developer who is eager to learn and grow into making, beautiful websites.</h1>
+								  </div>
+								  <span id="typed"></span>
+								   
+
+
 							</header>
 							<div class="content">
-								<p>A developer, who's eager to learn and grow into making beautiful websites</p>
+			
 								<ul class="actions">
 									<li><a href="files/Manuel, Mark Eugene G. - Resume.pdf" class="button next scrolly" download="makkunii resume">Resume</a></li>
 								</ul>
@@ -53,7 +65,7 @@
 						<section id="projects">
 							<div class="inner">
 								<header class="major">
-									<h2><i class="fas fa-folder"></i> /projects </h2>
+									<h2><i class="fa-solid fa-code"></i>  projects </h2>
 								</header>
 								<p><strong>I believe that if you're having fun it's not work at all</strong>, Here are some of the Projects I've done over the years.</p>
 							</div>
@@ -192,9 +204,9 @@
 									<div class="col-4"><span class="image fit"><img src="certificates/0010.jpg" alt=""></span></div>
 									<div class="col-4"><span class="image fit"><img src="certificates/0011.jpg" alt=""></span></div>
 									<div class="col-4"><span class="image fit"><img src="certificates/0012.jpg" alt=""></span></div>
-									<div class="col-4"><span class="image fit"><img src="certificates/0013.png" alt=""></span></div>
+									<!-- <div class="col-4"><span class="image fit"><img src="certificates/0013.png" alt=""></span></div>
 									<div class="col-4"><span class="image fit"><img src="certificates/0014.png" alt=""></span></div>
-									<div class="col-4"><span class="image fit"><img src="certificates/0015.png" alt=""></span></div>
+									<div class="col-4"><span class="image fit"><img src="certificates/0015.png" alt=""></span></div> -->
 								
 								</div>
 							</div>
@@ -292,34 +304,50 @@
 			<script src="assets/js/main.js"></script>
 
 			<script>
-				let paragraphNode = document.querySelector('.writing');
-				let textObject = {
-				  actionCounter: 0,
-				  typeDelay: 6,
-				  cursorDelay: 22,
-				  cursorShow: false,
-				  currentIndex: 0,
-				  stringLength: paragraphNode.textContent.length,
-				  textContent: paragraphNode.textContent
-				}
-				paragraphNode.textContent = "";
+				// let paragraphNode = document.querySelector('.writing');
+				// let textObject = {
+				//   actionCounter: 0,
+				//   typeDelay: 6,
+				//   cursorDelay: 22,
+				//   cursorShow: false,
+				//   currentIndex: 0,
+				//   stringLength: paragraphNode.textContent.length,
+				//   textContent: paragraphNode.textContent
+				// }
+				// paragraphNode.textContent = "";
 				
-				const writeText = ()=>{
-				  textObject.actionCounter ++;
-				  if( textObject.actionCounter % textObject.typeDelay == 0 ){
-					textObject.currentIndex += 1;
-				  }
-				  let string = textObject.textContent.substring(0, textObject.currentIndex);
-				  if(  textObject.actionCounter % textObject.cursorDelay == 0 ){
-					textObject.cursorShow = !textObject.cursorShow;
-				  }
-				  paragraphNode.textContent = (textObject.cursorShow)? string + "|" : string;
-				  window.requestAnimationFrame(writeText);
-				}
+				// const writeText = ()=>{
+				//   textObject.actionCounter ++;
+				//   if( textObject.actionCounter % textObject.typeDelay == 0 ){
+				// 	textObject.currentIndex += 1;
+				//   }
+				//   let string = textObject.textContent.substring(0, textObject.currentIndex);
+				//   if(  textObject.actionCounter % textObject.cursorDelay == 0 ){
+				// 	textObject.cursorShow = !textObject.cursorShow;
+				//   }
+				//   paragraphNode.textContent = (textObject.cursorShow)? string + "|" : string;
+				//   window.requestAnimationFrame(writeText);
+				// }
 				
-				window.requestAnimationFrame(writeText);
+				// window.requestAnimationFrame(writeText);
 				
 				</script>
+
+		 <script>
+			 var typed = new Typed('#typed', {
+			stringsElement: '#typed-strings',
+			typeSpeed: 40,
+			backDelay: 700,
+			fadeOut: true,
+			fadeOutClass: 'typed-fade-out',
+			fadeOutDelay: 500,
+			loop:false,
+			loopCount: Infinity,
+			showCursor: true,
+
+			});
+
+		 </script>		
 
 	</body>
 </html>
