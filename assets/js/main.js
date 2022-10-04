@@ -1,6 +1,4 @@
 	//open nav
-
-	
     function openNav() {
 		document.getElementById("myNav").style.height = "100%";
 		}
@@ -17,18 +15,6 @@
 				}, function () {
 					$(this).addClass('fa-bars');
 					$(this).removeClass('fa-burger');
-				});
-
-
-			});
-
-			$(document).ready(function () {
-				$('.move-down').hover(function () {
-					$(this).addClass('fa-angles-up');
-					$(this).removeClass('fa-angles-down'); 
-				}, function () {
-					$(this).addClass('fa-angles-down');
-					$(this).removeClass('fa-angles-up');
 				});
 
 
@@ -50,6 +36,7 @@
 			}
 		};
 
+		//script for typed.js
 		var typed = new Typed('#typed', {
 			stringsElement: '#typed-strings',
 			typeSpeed: 50,
@@ -61,9 +48,12 @@
 
 			});
 
-			var pages = ["home","projects","certificates","about"];
+
+			//pages array
+			var pages = ["home","projects","certificates"];
 			var pageCounter = 1;
 
+			//scroll functions
 			function scrollDown() {
 			
 			var goTo = document.getElementById(pages[pageCounter]);
@@ -80,6 +70,7 @@
 					
 			}
 
+			//reveal animation function on scroll
 			function reveal() {
 				var reveals = document.querySelectorAll(".reveal");
 	
@@ -95,6 +86,5 @@
 					}
 				}
 				}
-	
 			window.addEventListener("scroll", reveal);
 	

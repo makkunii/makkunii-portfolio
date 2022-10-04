@@ -8,165 +8,142 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<style>
-
-			
-			</style>
 		
 	</head>
 	<body>
+
+		<!-- start of header -->
 		<header class="header">
 			<div class="logo">
 				<a href="index.html" ><strong>M A K K U N I I</strong> <span>| P O R T F O L I O</span></a>
 				<!-- nav icon -->
 				<nav>
-					<a href="#menu"><i class="fa-solid fa-bars menu-icon" onclick="openNav()"></i></a>
-					
+					<a href="#menu"><i class="fa-solid fa-bars menu-icon" onclick="openNav()"></i></a>	
 				</nav>
-				<!-- nav popup -->
-				<div id="myNav" class="overlay" onclick="closeNav()">
+				<!-- popup menu -->
+				<div id="myNav" class="overlay" onclick="closeNav()">	
 					<a class="closebtn">&times;</a>
 					<div class="overlay-content">
 						<a href="#home">Home</a>
-						<a href="#about_me">About Me</a>
-						<a href="#projects">Projects</a>
+						<a href="#projects">About Me</a>
+						<a href="#certificates">Projects</a>
 						<a href="#contact">Contact</a>
 					</div>
 				</div>	
 			</div>
 		</header>
+		<!-- end of header -->
 		<div id="home" class="content-header">
+
+			<!-- typing message -->
 			<div class="content-message ">
 				<div id="typed-strings">
 					<h>A <strong class="strongTitle">Developer?</strong></h>
 					<h1>A <strong class="strongTitle">Vampire</strong> who stays up late at night?</h1>
 					<h1>Hi! I'm <strong class="strongTitle">Mark Eugene</strong>, nice to meet you</h1>
 				</div>
+
 				<span id="typed"></span>
 			</div>
+
+			<!-- href/resume button  -->
 			<div class="content-button">
 				<button class="btn-resume" type="button">RESUME</button>
-			</div>
-			
+			</div>	
 		</div>
 		<svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100px; width: 100%; z-index:-1">
 			<path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill:black"></path>
-		  </svg>
-		  <span onclick="scrollDown()"><i class="fa-solid fa-angles-down"></i></span>
+		</svg>
+
+		<!-- infinity scroll -->
+		<span onclick="scrollDown()"><i class="fa-solid fa-angles-down"></i></span>
 		  
-		
+		<!-- content projects -->
 		<div class="content" id="projects">
-			
-			
+
+			<!-- title content -->
 			<section>
 				<div>
-					<h1 class="title-contemt" >Projects</h1><br>
+					<h1 class="title-content" >Projects</h1><br>
 					<h3><strong>I belive that if you're having fun it's not work at all</strong>, Here are some of the projects I've done during my time learning web development</h3>
 				</div>
-
-				
-
-				
 			</section><br>
 			
+			<!-- grid revealing gallery  -->
 			<div class="container reveal">
 				<div class="row-projects"> 
 					<div class="column">
-					  <img src="/images/pic01.jpg">
-					  <img src="/images/pic02.jpg">
+					  <div class="image-container">
+						<img src="/images/pic01.jpg">
+						<div class="project-title"><h1>Kakilabot</h1></div>
+					  </div>
+
+					   <div class="image-container">
+						<img src="/images/pic02.jpg">
+						<div class="project-title"><h1>Kardia</h1></div>
+					  </div>
 					 
 					
 					</div>
 					<div class="column">
-						<img src="/images/pic03.jpg">
-						<img src="/images/pic04.jpg">
-						<img src="/images/pic05.jpg">
+						<div class="image-container">
+							<img src="/images/pic03.jpg">
+							<div class="project-title"><h1>TRB MALL</h1></div>
+						  </div>
+						  <div class="image-container">
+							<img src="/images/pic04.jpg">
+							<div class="project-title"><h1>IReady</h1></div>
+						  </div>
+						  <div class="image-container">
+							<img src="/images/pic05.jpg">
+							<div class="project-title"><h1>ITask</h1></div>
+						  </div>
 						
 					</div>  
 					<div class="column">
-						<img src="/images/pic06.jpg">
-						  <img src="/images/pic07.jpg">
-						<img src="/images/pic08.jpg">
+						<div class="image-container">
+							<img src="/images/pic06.jpg">
+							<div class="project-title"><h1>Online Enlistment</h1></div>
+						  </div>
+						  <div class="image-container">
+							<img src="/images/pic07.jpg">
+							<div class="project-title"><h1>Ordering System</h1></div>
+						  </div>
+						  <div class="image-container">
+							<img src="/images/pic08.jpg">
+							<div class="project-title"><h1>Personal MP3</h1></div>
+						  </div>
 						
 					
 					</div>
 					<div class="column">
-						<img src="/images/pic09.jpg">
-						<img src="/images/pic10.jpg">
+						<div class="image-container">
+							<img src="/images/pic09.jpg">
+							<div class="project-title"><h1>Mondee Air</h1></div>
+						  </div>
+						  <div class="image-container">
+							<img src="/images/pic10.jpg">
+							<div class="project-title"><h1>Math Lover</h1></div>
+						  </div>
 					</div>
 				  </div>
 
-			</div>
+			</div><br>		
 
-			<div id="certificates" style="height:800px; background-color: black;" class="container reveal">
-				<div class="row-projects"> 
-					<div class="column">
-					  <img src="/images/pic01.jpg">
-					  <img src="/images/pic02.jpg">
-					 
-					
-					</div>
-					<div class="column">
-						<img src="/images/pic03.jpg">
-						<img src="/images/pic04.jpg">
-						<img src="/images/pic05.jpg">
-						
-					</div>  
-					<div class="column">
-						<img src="/images/pic06.jpg">
-						  <img src="/images/pic07.jpg">
-						<img src="/images/pic08.jpg">
-						
-					
-					</div>
-					<div class="column">
-						<img src="/images/pic09.jpg">
-						<img src="/images/pic10.jpg">
-					</div>
-				  </div>
-
-			</div>
-
-			<div id="about" style="background-color: rgb(244, 0, 0);" class="container reveal">
-				<div class="row-projects"> 
-					<div class="column">
-					  <img src="/images/pic01.jpg">
-					  <img src="/images/pic02.jpg">
-					 
-					
-					</div>
-					<div class="column">
-						<img src="/images/pic03.jpg">
-						<img src="/images/pic04.jpg">
-						<img src="/images/pic05.jpg">
-						
-					</div>  
-					<div class="column">
-						<img src="/images/pic06.jpg">
-						  <img src="/images/pic07.jpg">
-						<img src="/images/pic08.jpg">
-						
-					
-					</div>
-					<div class="column">
-						<img src="/images/pic09.jpg">
-						<img src="/images/pic10.jpg">
-					</div>
-				  </div>
-
-			</div>
-
-
-			<br>
-				
-			  </div>
 		</div>
 
+
+		<div id="certificates" style="height:800px; background-color: black;" class="container reveal">
+			
+		</div>
+
+
+		<!-- scipts -->
 		<script src="assets/js/main.js"></script>
 		<script src="assets/js/three.r134.min.js"></script>
 		<script src="assets/js/vanta.net.min.js"></script>
 		
-
+		<!-- vanta script -->
 		<script>
 			VANTA.NET({
 			el: ".content-header",
