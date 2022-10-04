@@ -21,6 +21,7 @@
 				<!-- nav icon -->
 				<nav>
 					<a href="#menu"><i class="fa-solid fa-bars menu-icon" onclick="openNav()"></i></a>
+					
 				</nav>
 				<!-- nav popup -->
 				<div id="myNav" class="overlay" onclick="closeNav()">
@@ -34,7 +35,7 @@
 				</div>	
 			</div>
 		</header>
-		<div class="content-header">
+		<div id="home" class="content-header">
 			<div class="content-message ">
 				<div id="typed-strings">
 					<h>A <strong class="strongTitle">Developer?</strong></h>
@@ -51,7 +52,8 @@
 		<svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100px; width: 100%; z-index:-1">
 			<path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill:black"></path>
 		  </svg>
-		  <a href="#projects"><i class="fa-solid fa-eject"></i></a>
+		  <span onclick="scrollDown()"><i class="fa-solid fa-angles-down"></i></span>
+		  
 		
 		<div class="content" id="projects">
 			
@@ -96,6 +98,64 @@
 
 			</div>
 
+			<div id="certificates" style="height:800px; background-color: black;" class="container reveal">
+				<div class="row-projects"> 
+					<div class="column">
+					  <img src="/images/pic01.jpg">
+					  <img src="/images/pic02.jpg">
+					 
+					
+					</div>
+					<div class="column">
+						<img src="/images/pic03.jpg">
+						<img src="/images/pic04.jpg">
+						<img src="/images/pic05.jpg">
+						
+					</div>  
+					<div class="column">
+						<img src="/images/pic06.jpg">
+						  <img src="/images/pic07.jpg">
+						<img src="/images/pic08.jpg">
+						
+					
+					</div>
+					<div class="column">
+						<img src="/images/pic09.jpg">
+						<img src="/images/pic10.jpg">
+					</div>
+				  </div>
+
+			</div>
+
+			<div id="about" style="background-color: rgb(244, 0, 0);" class="container reveal">
+				<div class="row-projects"> 
+					<div class="column">
+					  <img src="/images/pic01.jpg">
+					  <img src="/images/pic02.jpg">
+					 
+					
+					</div>
+					<div class="column">
+						<img src="/images/pic03.jpg">
+						<img src="/images/pic04.jpg">
+						<img src="/images/pic05.jpg">
+						
+					</div>  
+					<div class="column">
+						<img src="/images/pic06.jpg">
+						  <img src="/images/pic07.jpg">
+						<img src="/images/pic08.jpg">
+						
+					
+					</div>
+					<div class="column">
+						<img src="/images/pic09.jpg">
+						<img src="/images/pic10.jpg">
+					</div>
+				  </div>
+
+			</div>
+
 
 			<br>
 				
@@ -108,17 +168,6 @@
 		
 
 		<script>
-			 var typed = new Typed('#typed', {
-			stringsElement: '#typed-strings',
-			typeSpeed: 50,
-			backDelay: 700,
-			fadeOutDelay: 500,
-			loop:false,
-			loopCount: Infinity,
-			showCursor: true,
-
-			});
-
 			VANTA.NET({
 			el: ".content-header",
 			mouseControls: true,
@@ -134,24 +183,6 @@
 			maxDistance: 21.00,
 			spacing: 12.00
 			})
-			
-			function reveal() {
-			var reveals = document.querySelectorAll(".reveal");
-
-			for (var i = 0; i < reveals.length; i++) {
-				var windowHeight = window.innerHeight;
-				var elementTop = reveals[i].getBoundingClientRect().top;
-				var elementVisible = 150;
-
-				if (elementTop < windowHeight - elementVisible) {
-				reveals[i].classList.add("active");
-				} else {
-				reveals[i].classList.remove("active");
-				}
-			}
-			}
-
-			window.addEventListener("scroll", reveal);
 		</script>
 		
 	</body>

@@ -335,25 +335,28 @@ animation: blink 0.7s infinite;
 	  max-width: 100%;
 	}
   }
-  .fa-eject {
-	opacity: 50%;
+  .fa-angles-down {
+	opacity: 70%;
 	font-size: 40px;
 	position:fixed;
 	padding-bottom: 50px;
 	bottom: 0;
 	left: 50%;
-	color:black;
-	z-index: 1000;
+	color:rgb(85, 184, 255);
+	z-index: 1;
 
 
   }
-  .fa-eject:hover {
+  .fa-angles-down:hover {
 	opacity: 100%;
 	font-size: 40px;
 	position:fixed;
-	padding-bottom: 50px;
+	padding-bottom: 45px;
 	bottom: 0;
 	left: 50%;
 	color:rgb(1, 153, 255);
-	z-index: 1000;
+	z-index: 1;
   }
+
+
+  
