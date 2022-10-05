@@ -644,7 +644,7 @@ input[type=text], select, textarea,input {
 		background-size: contain, cover;
 		padding:5%
 	}
-	.social-image:hover {
+	.social-images:hover {
 		opacity: 30%;
 		
 	}
