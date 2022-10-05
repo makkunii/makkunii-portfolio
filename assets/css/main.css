@@ -564,12 +564,14 @@ input[type=text], select, textarea,input {
 	background-color: #000000;
 	color:#ffffff;
 	padding:5px;
-	height: 520px;
+	max-height: 600px;
+	height: auto;
 	float:left;
-	width: 400px;
+	width: auto;
 	box-shadow: 50px 50px #e2e2e2;
 	text-decoration:none;
 	color: #ffffff;
+
   }
 
   /* .contact-box:hover {
@@ -587,6 +589,7 @@ input[type=text], select, textarea,input {
   }
 	.social-content {
 		padding:5%;
+		height: auto;
 		
 	}
 
@@ -643,6 +646,11 @@ input[type=text], select, textarea,input {
 	.social-image:hover {
 		opacity: 30%;
 		
+	}
+	.social-content img {
+		width: 100%;
+		max-height: 450px;
+		height: auto;
 	}
 
 	.footer {

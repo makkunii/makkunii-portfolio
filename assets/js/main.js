@@ -108,11 +108,6 @@
 			location.href = "https://makkunii.github.io/card";
 		};
 
-
-		document.getElementById("btn-resume").onclick = function () {
-			location.href = "files/Manuel, Mark Eugene G. - Resume.pdf";
-		};
-
 		window.onscroll = function(ev) {
 			if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
 				document.getElementById("infinity-scroll").style.display = "none";
