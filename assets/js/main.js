@@ -1,4 +1,5 @@
 	//open nav
+
     function openNav() {
 		document.getElementById("myNav").style.height = "100%";
 		}
@@ -50,7 +51,7 @@
 
 
 			//pages array
-			var pages = ["home","projects","certificates","contact"];
+			var pages = ["home","projects","certificates","contact","footer"];
 			var pageCounter = 1;
 
 			//scroll functions
@@ -102,16 +103,17 @@
 			content.style.maxHeight = content.scrollHeight + "px";
 		} 
 		});
-		}
+		};
 
 		document.getElementById("social-image").onclick = function () {
 			location.href = "https://makkunii.github.io/card";
-		};
-
-		window.onscroll = function(ev) {
-			if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-				document.getElementById("infinity-scroll").style.display = "none";
-				return;
-			}
+		}
+		
+		if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+			document.getElementById("infinity-scroll").style.display = "none";
+		}
+		else {
 			document.getElementById("infinity-scroll").style.display = "inline";
-		};
+		}
+
+	
