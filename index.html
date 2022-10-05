@@ -8,7 +8,9 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		
+		<style>
+			#more {display: none;}
+		</style>
 	</head>
 	<body>
 
@@ -25,8 +27,8 @@
 					<a class="closebtn">&times;</a>
 					<div class="overlay-content">
 						<a href="#home">Home</a>
-						<a href="#projects">About Me</a>
-						<a href="#certificates">Projects</a>
+						<a href="#projects">Projects</a>
+						<a href="#certificates">Cetificates</a>
 						<a href="#contact">Contact</a>
 					</div>
 				</div>	
@@ -56,7 +58,7 @@
 		</svg>
 
 		<!-- infinity scroll -->
-		<span onclick="scrollDown()"><i class="fa-solid fa-angles-down"></i></span>
+		<span onclick="scrollDown()"><i class="fa-solid fa-angles-down" id="infinity-scroll"></i></span>
 		  
 		<!-- content projects -->
 		<div class="content" id="projects">
@@ -133,9 +135,168 @@
 		</div>
 
 
-		<div id="certificates" style="height:800px; background-color: black;" class="container reveal">
+		<div id="certificates" class="container certificates reveal">
+			<section>
+				<div>
+					<div class="folder">
+						<h1 class="title-content-certificate">Certificates</h1><br>
+						<h3>Here are some of my academic achievements, seminars and training</h3><br>
+						<button class="collapsible"><i class="fa-regular fa-folder-open"></i> Click Here</button>
+						<div class="content-certificate">
+							<div class="content">
+								<div class="row-projects"> 
+									<div class="column">
+									  <div class="image-container">
+										<img src="/certificates/0001.jpg">
+									  </div>
+									   <div class="image-container">
+										<img src="/certificates/0002.jpg">
+									  </div>
+							
+									  <div class="image-container">
+										<img src="/certificates/0003.png">
+									  </div>
+							
+									  <div class="image-container">
+										<img src="/certificates/0004.jpg">
+									  </div>
+									 
+									
+									</div>
+									<div id="loaded" class="column">
+										<div class="image-container">
+											<img src="/certificates/0005.jpg">
+										</div>
+										<div class="image-container">
+											<img src="/certificates/0006.jpg">
+										</div>
+										<div class="image-container">
+											<img src="/certificates/0007.jpg">
+										  </div>
+										  <div class="image-container">
+											<img src="/certificates/0008.jpg">
+										  </div>
+									</div>  
+									<div class="column">
+										<div class="image-container">
+											<img src="/certificates/0009.jpg">
+										</div>
+										<div class="image-container">
+											<img src="/certificates/0010.jpg">
+										</div>
+										<div class="image-container">
+											<img src="/certificates/0011.jpg">
+										</div>
+										<div class="image-container">
+											<img src="/certificates/0012.jpg">
+										</div>
+										
+									
+									</div>
+									<div class="column">
+										<div class="image-container">
+											<img src="/certificates/0014.png">
+										</div>
+										<div class="image-container">
+											<img src="/certificates/0015.png">
+										</div>
+										<div class="image-container">
+											<img src="/certificates/css-cert.jpg">
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</section>
 			
+			<br>
+
+
+		
+			
+
+
+			<!-- <div id="more-content">
+					
+			</div> -->
+
 		</div>
+
+
+		<div id="contact" class="container contact reveal">
+			
+			<div class="row-contact"> 
+				<div class="column-contact">
+					<div class="contact-form-container">
+						<h1>Send me an Email</h1><br>
+					<form action="">
+						<div class="row-contact-form">
+						  <div class="col-75">
+							<input type="text" id="email" name="name" placeholder="Enter Name">
+						  </div>
+						</div><br>
+						
+						<div class="row-contact-form">
+						  <div class="col-75">
+							<input type="email" id="email" name="email" placeholder="Enter your Email">
+						  </div>
+						</div><br>
+					
+						<div class="row-contact-form">
+						  <div class="col-75">
+							<textarea id="subject" name="subject" placeholder="Tell me something.."></textarea>
+						  </div>
+						</div><br>
+						
+						<div class="row-contact-form">
+						  <input type="submit" value="Submit">
+						</div>
+					  </form>
+					</div>
+				</div>
+				<div class="column-contact">
+					<br>
+					<div class="contact-box">
+						<div class="social-content">
+							<div class="qr">
+								<img id="social-image" class="social-image" src="https://scontent.fmnl25-3.fna.fbcdn.net/v/t39.30808-6/306035863_5540006132688615_5456683897266703601_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=mA3JnSTOhP4AX_YaayW&_nc_ht=scontent.fmnl25-3.fna&oh=00_AT8_SrkRKHI16WEBGqwQHW8qQjAd1wZexbOrCrBJhRgY8g&oe=634325DD" alt="">
+							</div>
+							<address>
+								<h2 class="contact-text">Contact Information</h2>
+								<p class="contact-text"><a href="mailto:mmanuel.euguene@gmail.com"><i class="fa-solid fa-envelope"></i> mmanuel.euguene@gmail.com</a></p>
+								<p class="contact-text"><a href="tel:09751932808"><i class="fa-solid fa-phone"></i> 0975 193 2808</a></p>
+								<p class="contact-text"><i class="fa-solid fa-map-location"><a href="https://www.google.com/maps/place/Cabanatuan+City,+Nueva+Ecija/@15.5018164,120.9105588,12z/data=!3m1!4b1!4m5!3m4!1s0x33972936672fe8a5:0xcf7746734839022b!8m2!3d15.4994329!4d121.0105733" target="_blank">
+								</i> Nueva Ecija Province, Cabnatuan City</p>
+								</a><br><br>
+								<!-- <div class="social-media">
+									<a href="https://www.facebook.com/makkunii"><i class="fa-brands fa-facebook"></i></a>
+									<a href="https://www.twitter.com/makkunii"><i class="fa-brands fa-twitter"></i></a>
+									<a href="https://www.instagram.com/makkunii"><i class="fa-brands fa-square-instagram"></i></a>
+									<a href="https://github.com/makkunii"><i class="fa-brands fa-github"></i></a>
+									<a href="https://t.me/makkunii"><i class="fa-brands fa-telegram"></i></a>
+								</div> -->
+							</address><br>
+							<!-- <hr><br>
+							<h3>My Buddies: </h3><br>
+							<h3><i class="fa-solid fa-user"></i> 0975 193 2808</h3><br>
+							<h3><i class="fa-solid fa-user"></i> </h3><br><br> -->
+						</div>
+					</div>
+					
+				</div>  
+			  
+			  </div>
+		
+
+		</div>
+		
+		
+		<div id="footer" class="footer">
+			makkunii 2022
+		</div>	
 
 
 		<!-- scipts -->
@@ -145,6 +306,21 @@
 		
 		<!-- vanta script -->
 		<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
 			VANTA.NET({
 			el: ".content-header",
 			mouseControls: true,
@@ -157,6 +333,22 @@
 			color: 0x1c82ff,
   			backgroundColor: 0x0,
 			})
+			
+			
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+				content.style.maxHeight = null;
+			} else {
+				content.style.maxHeight = content.scrollHeight + "px";
+			} 
+			});
+			}
 		</script>
 		
 	</body>

@@ -357,7 +357,7 @@ opacity: 50%;
 .image-container {
 position: relative;
 text-align: center;
-color: white;
+color: rgb(255, 255, 255);
 background-color: #000000;
 
 }
@@ -376,3 +376,279 @@ left: 50%;
 transform: translate(-50%, -50%);
 background-color: #000000;
 }
+
+.certificates section {
+	color:rgb(255, 255, 255);
+	padding:5%;
+}
+.certificates { 
+	background-color: #000000;
+}
+
+.see-more-btn {
+	border-color: white;
+	background-color: transparent;
+	color: white;
+	letter-spacing: 5px;
+	width: 170px;
+	height: 50px;
+	font-size: .7rem;
+	font-weight: 600;
+
+}
+
+.see-more-btn:hover {
+	border-color: white;
+	background-color: white;
+	color: rgb(9, 9, 9);
+	letter-spacing: 5px;
+	width: 170px;
+	height: 50px;
+	font-size: .7rem;
+	font-weight: 600;
+
+}
+
+
+
+.collapsible {
+	border-color: white;
+	background-color: white;
+	color: rgb(9, 9, 9);
+	letter-spacing: 5px;
+	width: 170px;
+	height: 50px;
+	font-size: .7rem;
+	font-weight: 600;
+  }
+  
+  .certificates .active, .collapsible:hover {
+	background-color: rgb(0, 0, 0);
+	color:white;
+  }
+  
+  .content-certificate {
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 1s ease-in;
+	background-color: #f1f1f1;
+  }
+
+  .folder {
+	padding:5%;
+  }
+  .fa-folder-open {
+	font-size:20px
+  }
+  .title-content-certificate {
+	text-align: left;
+  }
+
+  
+input[type=text], select, textarea,input {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	resize: vertical;
+	background-color:white;
+	width: 100%;
+}
+  
+  label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+  }
+ 
+  textarea {
+	height:200px;
+  }
+  input[type=submit] {
+	background-color: #ffffff;
+	color: #000000;
+	padding: 12px 20px;
+	border: 1px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 4px;
+	cursor: pointer;
+	float: left;
+	width: 50%;
+  }
+  
+  input[type=submit]:hover {
+	background-color: #000000;
+	color:#ffffff;
+  }
+  
+  .container-contact{
+	border-radius: 5px;
+	padding: 5%;
+	background-color: #ffffff;
+  }
+  
+  .col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+  }
+  
+  .col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row-contact-form:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.col-25, .col-75, input[type=submit] {
+	  width: 100%;
+	  margin-top: 0;
+	}
+  }
+
+  .contact {
+	background-color: #ffffff;
+	padding:6%;
+  }
+
+
+  .row-contact {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column-contact {
+	-ms-flex: 50%; /* IE10 */
+	flex: 50%;
+	max-width: 50%;
+	padding: 0 4px;
+  }
+  
+  .column-contact img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+	.column-contact {
+	  -ms-flex: 50%;
+	  flex: 50%;
+	  max-width: 50%;
+	}
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.column-contact {
+	  -ms-flex: 100%;
+	  flex: 100%;
+	  max-width: 100%;
+	}
+  }
+  
+  .contact-box {
+	background-color: #000000;
+	color:#ffffff;
+	padding:5px;
+	height: 520px;
+	float:left;
+	width: 400px;
+	box-shadow: 50px 50px #e2e2e2;
+	text-decoration:none;
+	color: #ffffff;
+  }
+
+  /* .contact-box:hover {
+	background-color: #ffffff;
+	border: 1px solid rgb(0, 0, 0);
+	color:#000000;
+	padding:5px;
+	height: 500px;
+	float:left;
+	width: 400px;
+	box-shadow: 50px 50px #e2e2e2;
+  } */
+  .contact-form-container {	
+	padding:5%;
+  }
+	.social-content {
+		padding:5%;
+		
+	}
+
+	.social-content h3 {
+		font-weight: 300;
+		
+	}
+	.social-content h3:hover{
+		color: #959595;
+	}
+	.social-content a {
+		text-decoration:none;
+		color: #ffffff;
+	}
+	.social-content a:hover {
+		text-decoration:none;
+		color: #959595;
+	}
+
+	.social-media {
+		font-size: 30px;
+		letter-spacing: 5px;
+		text-align: center;
+	}
+
+	.social-media-box {
+		padding:5%;
+		font-size: 30px;
+		background-color: #ffffff;
+		color: #000000;
+		text-align: center;
+	}
+	
+	.social-media-box a{
+		padding:5%;
+		font-size: 30px;
+		color: #000000;
+		text-align: center;
+	}
+	.social-media-box h3{
+		font-size: 15px;
+
+	}
+	.contact-text {
+		padding-top: 5px;
+	}
+
+	.qr:hover {
+		background-image: url("https://i.ibb.co/D7L43TR/qr-code.png");
+		background-repeat: no-repeat;
+		background-size: contain, cover;
+		padding:5%
+	}
+	.social-image:hover {
+		opacity: 30%;
+		
+	}
+
+	.footer {
+		height: 100px;
+		background-color: #000000;
+		text-align: center;
+		color:#ffffff;
+		padding:5%;
+	}
