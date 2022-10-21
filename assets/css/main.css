@@ -638,12 +638,12 @@ input[type=text], select, textarea,input {
 		padding-top: 5px;
 	}
 
-	.qr:hover {
+	/* .qr:hover {
 		background-image: url("https://i.ibb.co/D7L43TR/qr-code.png");
 		background-repeat: no-repeat;
 		background-size: contain, cover;
 		padding:5%
-	}
+	} */
 	.social-image:hover {
 		opacity: 30%;
 		
