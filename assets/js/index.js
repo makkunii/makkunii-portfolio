@@ -1,3 +1,5 @@
+
+
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -42,7 +44,7 @@ for (i = 0; i < coll.length; i++) {
 			});
 			}
 
-
+    // here you create the img element for certificates
     var img1 = document.createElement("img");
     var img2 = document.createElement("img");
     var img3 = document.createElement("img");
@@ -59,7 +61,7 @@ for (i = 0; i < coll.length; i++) {
     var img14 = document.createElement("img");
     var img15 = document.createElement("img");
 
-
+   // here you create the img element for projects
     var project1 = document.createElement("img");
     var project2 = document.createElement("img");
     var project3 = document.createElement("img");
@@ -74,7 +76,6 @@ for (i = 0; i < coll.length; i++) {
 
 
     
-
 
 
     img1.src = "/certificates/0001.jpg";
@@ -93,7 +94,7 @@ for (i = 0; i < coll.length; i++) {
     img14.src = "/certificates/0014.png";
     img15.src = "/certificates/css-cert.jpg";
 
-
+    // here you delcare the source of the iamge file of the projects
     project1.src = "/images/pic01.jpg";
     project2.src = "/images/pic02.jpg";
     project3.src = "/images/pic03.jpg";
@@ -105,7 +106,7 @@ for (i = 0; i < coll.length; i++) {
     project9.src = "/images/pic09.jpg";
     project10.src = "/images/pic10.jpg";
 
-
+    // you get the id of the div of the place where you want it to be
     var elproject1 = document.getElementById("project1");
     var elproject2 = document.getElementById("project2");
     var elproject3 = document.getElementById("project3");
@@ -133,7 +134,7 @@ for (i = 0; i < coll.length; i++) {
     var src14 = document.getElementById("cert14");
     var src15 = document.getElementById("cert15");
 
-
+   //you append the element by doing this
     elproject1.appendChild(project1);
     elproject2.appendChild(project2);
     elproject3.appendChild(project3);
