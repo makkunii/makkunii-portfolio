@@ -109,7 +109,7 @@
 		};
 
 		document.getElementById("social-image").onclick = function () {
-			//this is under construction whahaha i accidently destroy the card page whahah make sure to get back here
+			//this is under construction i accidently destroy the card page whahah make sure to get back here
 			location.href = "https://makkunii.github.io/card";
 		}
 		
