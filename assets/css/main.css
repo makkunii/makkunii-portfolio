@@ -33,13 +33,13 @@ header.nav-fixed {
     transition: all 4s fade-in-out;
 	
 }
-/* gets added to the class nav-bar */
+
 .header-active {
     background-color:rgb(0, 0, 0);
     box-shadow: 5px -1px 12px -5px rgb(255, 255, 255);
 }
 
-/* logo regular state */
+
 .logo strong {
 	background-color: rgb(255, 255, 255);
 	color: rgb(0, 0, 0);
@@ -56,7 +56,7 @@ header.nav-fixed {
 .menu-icon {
 	font-size: 20px;
 }
-/* logo when scrolled */
+
 .logo-active strong {
 	background-color: rgb(0, 0, 0);
 	color: rgb(255, 255, 255);
@@ -71,29 +71,29 @@ header.nav-fixed {
 	text-decoration: none;
 }
 
-/* vanta  */
+
 .vanta-canvas {
 	opacity: 70%;
 	z-index: -2;
 }
-/* custom scrollbar */
+
 ::-webkit-scrollbar {
 	width: 10px;
   }  
-  /* Track */
+
   ::-webkit-scrollbar-track {
 	background: #f1f1f1; 
   }  
-  /* Handle */
+
   ::-webkit-scrollbar-thumb {
 	background: #888; 
   } 
-  /* Handle on hover */
+ 
   ::-webkit-scrollbar-thumb:hover {
 	background: rgba(119, 119, 119, 0.721); 
   } 
 
- /* overlay for menu  */
+
   .overlay {
 	height: 0%;
 	width: 100%;
@@ -106,7 +106,7 @@ header.nav-fixed {
 	overflow: hidden;
 	transition: 0.5s; 	
   }
-/* menu contents  */
+
   .overlay-content {
 	position: absolute;
 	top: 25%;
@@ -115,7 +115,7 @@ header.nav-fixed {
 	margin-top: 30px;
 	z-index: 1000;
   }
-/* menu items   */
+
   .overlay a {
 	padding: 8px;
 	text-decoration: none;
@@ -172,7 +172,7 @@ animation: blink 0.7s infinite;
 	padding-top: 100px;	
 	
 }
-/* resume button */
+
 .btn-resume {
 	border-color: white;
 	background-color: transparent;
@@ -205,23 +205,18 @@ animation: blink 0.7s infinite;
 	width: 40%;
 	padding: 50px;
   }
-  
-  /* Clear floats af
-  ter the columns */
+
 .row:after {
 	content: "";
 	display: table;
 	clear: both;
 }
 
-/* section position */
 section{
 	display: flex;
 	justify-content: left;
 	align-items: center;
 }
-
-/* section contents */
 section .container{
 padding-top: 0;
 margin-top: 0;
@@ -286,16 +281,15 @@ opacity: 1;
 text-align: left;
 }
 .row-projects {
-display: -ms-flexbox; /* IE10 */
+display: -ms-flexbox;
 display: flex;
--ms-flex-wrap: wrap; /* IE10 */
+-ms-flex-wrap: wrap; 
 flex-wrap: wrap;
 padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
 .column {
--ms-flex: 25%; /* IE10 */
+-ms-flex: 25%; 
 flex: 25%;
 max-width: 25%;
 padding: 0 4px;
@@ -307,7 +301,6 @@ vertical-align: middle;
 width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
 .column {
 	-ms-flex: 50%;
@@ -316,7 +309,6 @@ width: 100%;
 }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
 .column {
 	-ms-flex: 100%;
@@ -324,7 +316,6 @@ width: 100%;
 	max-width: 100%;
 }
 }
-/* infinity scroll */
 .fa-angles-down {
 opacity: 70%;
 font-size: 40px;
@@ -498,15 +489,13 @@ input[type=text], select, textarea,input {
 	width: 75%;
 	margin-top: 6px;
   }
-  
-  /* Clear floats after the columns */
+
   .row-contact-form:after {
 	content: "";
 	display: table;
 	clear: both;
   }
   
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
 	.col-25, .col-75, input[type=submit] {
 	  width: 100%;
@@ -522,16 +511,15 @@ input[type=text], select, textarea,input {
 
 
   .row-contact {
-	display: -ms-flexbox; /* IE10 */
+	display: -ms-flexbox; 
 	display: flex;
-	-ms-flex-wrap: wrap; /* IE10 */
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	padding: 0 4px;
   }
-  
-  /* Create four equal columns that sits next to each other */
+
   .column-contact {
-	-ms-flex: 50%; /* IE10 */
+	-ms-flex: 50%; 
 	flex: 50%;
 	max-width: 50%;
 	padding: 0 4px;
@@ -542,8 +530,6 @@ input[type=text], select, textarea,input {
 	vertical-align: middle;
 	width: 100%;
   }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
 	.column-contact {
 	  -ms-flex: 50%;
@@ -551,8 +537,7 @@ input[type=text], select, textarea,input {
 	  max-width: 50%;
 	}
   }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ 
   @media screen and (max-width: 600px) {
 	.column-contact {
 	  -ms-flex: 100%;
@@ -575,16 +560,6 @@ input[type=text], select, textarea,input {
 
   }
 
-  /* .contact-box:hover {
-	background-color: #ffffff;
-	border: 1px solid rgb(0, 0, 0);
-	color:#000000;
-	padding:5px;
-	height: 500px;
-	float:left;
-	width: 400px;
-	box-shadow: 50px 50px #e2e2e2;
-  } */
   .contact-form-container {	
 	padding:5%;
   }
@@ -637,13 +612,6 @@ input[type=text], select, textarea,input {
 	.contact-text {
 		padding-top: 5px;
 	}
-
-	/* .qr:hover {
-		background-image: url("https://i.ibb.co/D7L43TR/qr-code.png");
-		background-repeat: no-repeat;
-		background-size: contain, cover;
-		padding:5%
-	} */
 	.social-image:hover {
 		opacity: 30%;
 		
