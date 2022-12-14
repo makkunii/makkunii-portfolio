@@ -162,4 +162,14 @@ for (i = 0; i < coll.length; i++) {
     src14.appendChild(img14);
     src15.appendChild(img15);
 
+
+
+
+    //this for the card 
+    $('button').click(function(){
+        $('button').toggleClass('active');
+        $('.title').toggleClass('active');
+        $('nav').toggleClass('active');
+      });
+
     
