@@ -11,9 +11,11 @@
 		//change icon logo
 		$(document).ready(function () {
 				$('.menu-icon').hover(function () {
+					//changes the icon into a burger whahahah i forgot where i sasw this but yeah i included it here
 					$(this).addClass('fa-burger');
 					$(this).removeClass('fa-bars'); 
 				}, function () {
+					
 					$(this).addClass('fa-bars');
 					$(this).removeClass('fa-burger');
 				});
@@ -26,6 +28,7 @@
 		const logo = document.querySelector('.logo');
 		window.onscroll = () => {
 			if (window.scrollY > 300) {
+				//this is sometihnig i am proud of whahah although i know there are better ways to do this
 				navbar.classList.add('header-active');
 				logo.classList.remove('logo');
 				logo.classList.add('logo-active');
@@ -111,9 +114,11 @@
 		}
 		
 		if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+			//this hides the element 
 			document.getElementById("infinity-scroll").style.display = "none";
 		}
 		else {
+			//this will show the lement
 			document.getElementById("infinity-scroll").style.display = "inline";
 		}
 
