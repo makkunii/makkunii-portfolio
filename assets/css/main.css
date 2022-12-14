@@ -334,8 +334,6 @@ color:rgb(1, 153, 255);
 z-index: 1;
 }
 
-
-/* gallery hover with text */
 .image-container img:hover {
 background-color: #000000;
 opacity: 50%;
@@ -394,8 +392,6 @@ background-color: #000000;
 	font-weight: 600;
 
 }
-
-
 
 .collapsible {
 	border-color: white;
