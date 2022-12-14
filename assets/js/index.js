@@ -1,7 +1,8 @@
 
-
+// for the collapsible on the certifactes part am planning to change this structure but for now this is fine as is
 var coll = document.getElementsByClassName("collapsible");
 var i;
+
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
@@ -14,7 +15,7 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
-
+            //settings for vanta i will probably change this as i will juse particle js i think that is much better whahaha
 			VANTA.NET({
 			el: ".content-header",
 			mouseControls: true,
