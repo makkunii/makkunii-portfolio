@@ -1,5 +1,5 @@
 
-// for the collapsible on the certifactes part am planning to change this structure but for now this is fine as is
+
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
