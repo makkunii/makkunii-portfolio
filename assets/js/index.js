@@ -15,7 +15,7 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
-            //settings for vanta i will probably change this as i will juse particle js i think that is much better whahaha
+            //settings for vanta i will probably change this as i will juse particle js i think that is much better
 			VANTA.NET({
 			el: ".content-header",
 			mouseControls: true,
