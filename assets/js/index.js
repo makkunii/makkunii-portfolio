@@ -60,6 +60,17 @@ for (i = 0; i < coll.length; i++) {
     var img15 = document.createElement("img");
 
 
+    var project1 = document.createElement("img");
+    var project2 = document.createElement("img");
+    var project3 = document.createElement("img");
+    var project4 = document.createElement("img");
+    var project5 = document.createElement("img");
+    var project6 = document.createElement("img");
+    var project7 = document.createElement("img");
+    var project8 = document.createElement("img");
+    var project9 = document.createElement("img");
+    var project10 = document.createElement("img");
+
 
 
     
@@ -83,7 +94,28 @@ for (i = 0; i < coll.length; i++) {
     img15.src = "/certificates/css-cert.jpg";
 
 
+    project1.src = "/images/pic01.jpg";
+    project2.src = "/images/pic02.jpg";
+    project3.src = "/images/pic03.jpg";
+    project4.src = "/images/pic04.jpg";
+    project5.src = "/images/pic05.jpg";
+    project6.src = "/images/pic06.jpg";
+    project7.src = "/images/pic07.jpg";
+    project8.src = "/images/pic08.jpg";
+    project9.src = "/images/pic09.jpg";
+    project10.src = "/images/pic10.jpg";
 
+
+    var elproject1 = document.getElementById("project1");
+    var elproject2 = document.getElementById("project2");
+    var elproject3 = document.getElementById("project3");
+    var elproject4 = document.getElementById("project4");
+    var elproject5 = document.getElementById("project5");
+    var elproject6 = document.getElementById("project6");
+    var elproject7 = document.getElementById("project7");
+    var elproject8 = document.getElementById("project8");
+    var elproject9 = document.getElementById("project9");
+    var elproject10 = document.getElementById("project10");
 
     var src1 = document.getElementById("cert1");
     var src2 = document.getElementById("cert2");
@@ -102,7 +134,16 @@ for (i = 0; i < coll.length; i++) {
     var src15 = document.getElementById("cert15");
 
 
-
+    elproject1.appendChild(project1);
+    elproject2.appendChild(project2);
+    elproject3.appendChild(project3);
+    elproject4.appendChild(project4);
+    elproject5.appendChild(project5);
+    elproject6.appendChild(project6);
+    elproject7.appendChild(project7);
+    elproject8.appendChild(project8);
+    elproject9.appendChild(project9);
+    elproject10.appendChild(project10);
 
     src1.appendChild(img1);
     src2.appendChild(img2);
