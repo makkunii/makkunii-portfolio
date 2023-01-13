@@ -10,34 +10,19 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<style>
 			#more {display: none;}
-			html {
-				/* dictates scroll behavior */
-				scroll-behavior: smooth;
-			}
-			* {
-
-				padding: 0;
-				margin: 0;
-				box-sizing: border-box;
-				font-family: 'Quicksand', sans-serif;
-			}
-			body {
-				background-color: rgb(255, 255, 255);		 
-			}
-			
 		</style>
 	</head>
 	<body>
 
+		<!-- start of header -->
 		<header class="header">
 			<div class="logo">
 				<a href="index.html" ><strong>M A K K U N I I</strong> <span>| P O R T F O L I O</span></a>
-				
-				<!-- opens a popup menu overlay -->
+				<!-- nav icon -->
 				<nav>
 					<a href="#menu"><i class="fa-solid fa-bars menu-icon" onclick="openNav()"></i></a>	
 				</nav>
-				
+				<!-- popup menu -->
 				<div id="myNav" class="overlay" onclick="closeNav()">	
 					<a class="closebtn">&times;</a>
 					<div class="overlay-content">
@@ -49,10 +34,10 @@
 				</div>	
 			</div>
 		</header>
-	
+		<!-- end of header -->
 		<div id="home" class="content-header">
 
-			<!-- this is the typing part -->
+			<!-- typing message -->
 			<div class="content-message ">
 				<div id="typed-strings">
 					<h>A <strong class="strongTitle">Developer?</strong></h>
@@ -72,29 +57,31 @@
 			<path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill:black"></path>
 		</svg>
 
-		
+		<!-- infinity scroll -->
 		<span onclick="scrollDown()"><i class="fa-solid fa-angles-down" id="infinity-scroll"></i></span>
-		
-	
+		  
+		<!-- content projects -->
 		<div class="content" id="projects">
 
+			<!-- title content -->
 			<section>
 				<div>
 					<h1 class="title-content" >Projects</h1><br>
 					<h3><strong>I belive that if you're having fun it's not work at all</strong>, Here are some of the projects I've done during my time learning web development</h3>
 				</div>
 			</section><br>
-
+			
+			<!-- grid revealing gallery  -->
 			<div class="container reveal">
 				<div class="row-projects"> 
 					<div class="column">
 					  <div class="image-container">
-						<div id="project1"></div>
+						<img src="/images/pic01.jpg">
 						<div class="project-title"><h1>Kakilabot</h1></div>
 					  </div>
 
 					   <div class="image-container">
-						<div id="project2"></div>
+						<img src="/images/pic02.jpg">
 						<div class="project-title"><h1>Kardia</h1></div>
 					  </div>
 					 
@@ -102,32 +89,30 @@
 					</div>
 					<div class="column">
 						<div class="image-container">
-							<div id="project3"></div>
+							<img src="/images/pic03.jpg">
 							<div class="project-title"><h1>TRB MALL</h1></div>
 						  </div>
 						  <div class="image-container">
-							<div id="project4"></div>
-
+							<img src="/images/pic04.jpg">
 							<div class="project-title"><h1>IReady</h1></div>
 						  </div>
 						  <div class="image-container">
-							<div id="project5"></div>
-
+							<img src="/images/pic05.jpg">
 							<div class="project-title"><h1>ITask</h1></div>
 						  </div>
 						
 					</div>  
 					<div class="column">
 						<div class="image-container">
-							<div id="project6"></div>
+							<img src="/images/pic06.jpg">
 							<div class="project-title"><h1>Online Enlistment</h1></div>
 						  </div>
 						  <div class="image-container">
-							<div id="project7"></div>
+							<img src="/images/pic07.jpg">
 							<div class="project-title"><h1>Ordering System</h1></div>
 						  </div>
 						  <div class="image-container">
-							<div id="project8"></div>
+							<img src="/images/pic08.jpg">
 							<div class="project-title"><h1>Personal MP3</h1></div>
 						  </div>
 						
@@ -135,11 +120,11 @@
 					</div>
 					<div class="column">
 						<div class="image-container">
-							<div id="project9"></div>	
+							<img src="/images/pic09.jpg">
 							<div class="project-title"><h1>Mondee Air</h1></div>
 						  </div>
 						  <div class="image-container">
-							<div id="project10"></div>
+							<img src="/images/pic10.jpg">
 							<div class="project-title"><h1>Math Lover</h1></div>
 						  </div>
 					</div>
@@ -162,61 +147,61 @@
 								<div class="row-projects"> 
 									<div class="column">
 									  <div class="image-container">
-										<div id="cert1"></div>
+										<img src="/certificates/0001.jpg">
 									  </div>
 									   <div class="image-container">
-										<div id="cert2"></div>
+										<img src="/certificates/0002.jpg">
 									  </div>
 							
 									  <div class="image-container">
-										<div id="cert3"></div>
+										<img src="/certificates/0003.png">
 									  </div>
 							
 									  <div class="image-container">
-										<div id="cert4"></div>
+										<img src="/certificates/0004.jpg">
 									  </div>
 									 
 									
 									</div>
 									<div id="loaded" class="column">
 										<div class="image-container">
-											<div id="cert5"></div>
+											<img src="/certificates/0005.jpg">
 										</div>
 										<div class="image-container">
-											<div id="cert6"></div>
+											<img src="/certificates/0006.jpg">
 										</div>
 										<div class="image-container">
-											<div id="cert7"></div>
+											<img src="/certificates/0007.jpg">
 										  </div>
 										  <div class="image-container">
-											<div id="cert8"></div>
+											<img src="/certificates/0008.jpg">
 										  </div>
 									</div>  
 									<div class="column">
 										<div class="image-container">
-											<div id="cert9"></div>
+											<img src="/certificates/0009.jpg">
 										</div>
 										<div class="image-container">
-											<div id="cert10"></div>
+											<img src="/certificates/0010.jpg">
 										</div>
 										<div class="image-container">
-											<div id="cert11"></div>
+											<img src="/certificates/0011.jpg">
 										</div>
 										<div class="image-container">
-											<div id="cert12"></div>
+											<img src="/certificates/0012.jpg">
 										</div>
 										
 									
 									</div>
 									<div class="column">
 										<div class="image-container">
-											<div id="cert13"></div>
+											<img src="/certificates/0014.png">
 										</div>
 										<div class="image-container">
-											<div id="cert14"></div>
+											<img src="/certificates/0015.png">
 										</div>
 										<div class="image-container">
-											<div id="cert15"></div>
+											<img src="/certificates/css-cert.jpg">
 										</div>
 									</div>
 								</div>
@@ -228,6 +213,15 @@
 			</section>
 			
 			<br>
+
+
+		
+			
+
+
+			<!-- <div id="more-content">
+					
+			</div> -->
 
 		</div>
 
@@ -277,9 +271,18 @@
 								<p class="contact-text"><i class="fa-solid fa-map-location"><a href="https://www.google.com/maps/place/Cabanatuan+City,+Nueva+Ecija/@15.5018164,120.9105588,12z/data=!3m1!4b1!4m5!3m4!1s0x33972936672fe8a5:0xcf7746734839022b!8m2!3d15.4994329!4d121.0105733" target="_blank">
 								</i> Nueva Ecija Province, Cabnatuan City</p>
 								</a><br><br>
-								
+								<!-- <div class="social-media">
+									<a href="https://www.facebook.com/makkunii"><i class="fa-brands fa-facebook"></i></a>
+									<a href="https://www.twitter.com/makkunii"><i class="fa-brands fa-twitter"></i></a>
+									<a href="https://www.instagram.com/makkunii"><i class="fa-brands fa-square-instagram"></i></a>
+									<a href="https://github.com/makkunii"><i class="fa-brands fa-github"></i></a>
+									<a href="https://t.me/makkunii"><i class="fa-brands fa-telegram"></i></a>
+								</div> -->
 							</address><br>
-						
+							<!-- <hr><br>
+							<h3>My Buddies: </h3><br>
+							<h3><i class="fa-solid fa-user"></i> 0975 193 2808</h3><br>
+							<h3><i class="fa-solid fa-user"></i> </h3><br><br> -->
 						</div>
 					</div>
 					
@@ -295,11 +298,58 @@
 			© 2020 - Created by makkunii.
 		</div>	
 
+
+		<!-- scipts -->
 		<script src="assets/js/main.js"></script>
 		<script src="assets/js/three.r134.min.js"></script>
 		<script src="assets/js/vanta.net.min.js"></script>
 		
-		<script src="assets/js/index.js"></script>
+		<!-- vanta script -->
+		<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+			VANTA.NET({
+			el: ".content-header",
+			mouseControls: true,
+			touchControls: true,
+			gyroControls: false,
+			minHeight: 200.00,
+			minWidth: 200.00,
+			scale: 1.00,
+			scaleMobile: 1.00,
+			color: 0x1c82ff,
+  			backgroundColor: 0x0,
+			})
+			
+			
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+				content.style.maxHeight = null;
+			} else {
+				content.style.maxHeight = content.scrollHeight + "px";
+			} 
+			});
+			}
+		</script>
 		
 	</body>
 </html>
