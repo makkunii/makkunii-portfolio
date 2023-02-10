@@ -237,8 +237,36 @@ input:checked ~ .bubble::after {
 	color: var(--grey);
 }
 .banner {
-    width: 300px;
+    width: 400px;
     display: block;
-  margin: 0 auto;
+ 	margin: 0 auto;
   
+}
+/* Mobile devices (portrait and landscape) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	.banner {
+		width: 400px;
+	}
+  }
+  
+  /* Tablets (portrait and landscape) */
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	.banner {
+		width: 800px;
+	}
+  }
+  
+  /* Desktops and laptops */
+  @media only screen and (min-width: 1224px) {
+	.banner {
+		width: 700px;
+	}
+  }
+  
+  /* Large screens */
+  @media only screen and (min-width: 1824px) {
+	/* CSS rules */
+  }
+.audio-bar { 
+	width: 100%;
 }
