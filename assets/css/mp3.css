@@ -92,7 +92,7 @@ body{
   width: 0%;
   position: relative;
   border-radius: inherit;
-  background: (var(--black));
+  background: var(--black);
 }
 .progress-bar::before{
   content: "";
