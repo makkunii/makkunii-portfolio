@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fucking button</title>
+</head>
+<body>
+    <div id="button-container">
+    <button id="btn-1"><input type="button" value="button"/></button>
+    <button id="btn-2"></button>
+    <div id="light"></div>
+    </div>
+
+
+    <style>
+        *{
+        padding :0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: system-ui, sans-serif;
+        }
+        body{
+        background: white;
+        height:100vh;
+        width:100%;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        }
+        button{
+        height : 5em;
+        width: 14em;
+        outline: none;
+        border-radius: 1rem;
+        border: none;
+        position: absolute;
+        top: 0;
+        left:0;
+        transform: translate(-50%,-50%);
+        cursor: pointer;
+        transition: all 0.5s ease;
+        }
+        #button-container{
+        position: relative;
+        margin: auto;
+        }
+        #button-container button:nth-child(1){
+        z-index: 10;
+        width: calc(14em + 2px);
+        height: calc(5em + 2px);
+        background-color: white;
+        position: relative;
+        color:white;
+        }
+        #light{
+        width: 11em;
+        display: none;
+        border-radius: 1rem;
+        height: 4em;
+        position: absolute;
+        top: 0;
+        left:0;
+        transform: translate(-50%,-50%);
+        box-shadow: -250px 0px 150px 100px rgba(255,255,255,.2), 250px 0px 150px 100px rgba(255,255,255,.2);
+        opacity: 1;
+        animation: flickerI 2s linear  reverse infinite;
+        }
+        #button-container button:nth-child(1)::before{
+        content: '';
+        border-radius: inherit;
+        height: 100%;
+        left: 0;
+        top:0;
+        width: 100%;
+        z-index : 12;
+        position: absolute;
+        transition: all .5ms ease;
+        opacity: 0;
+        background:radial-gradient(300px circle at var(--mouse-x) var(--mouse-y), rgba(255,255,255,0.1), transparent 40%);
+        }
+        #button-container button:nth-child(1):hover::before{
+        opacity: 1;
+        }
+
+        #btn-2{
+        z-index:5;
+        background: url('https://i.ytimg.com/vi/tVAgHUc1YxI/maxresdefault.jpg') no-repeat;
+        background-size:cover;
+        backgroud-position:top;
+        box-shadow: 
+            inset 0 5px 5px rgba(0, 0, 0, 0.034),
+            inset 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            inset 0 12.5px 10px rgba(0, 0, 0, 0.06),
+            inset 0 30.3px 17.9px rgba(0, 0, 0, 0.072),
+            inset 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            inset 0 100px 80px rgba(0, 0, 0, 0.12)
+        }
+
+        #btn-1.open{
+        transform: rotate(-20deg);
+        box-shadow: 
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+        }
+
+        @keyframes flickerI {
+        0% {
+            opacity: 0.4;
+        }
+        5% {
+            opacity: 0.5;
+        }
+        10% {
+            opacity: 0.6;
+        }
+        15% {
+            opacity: 0.85;
+        }
+        25% {
+            opacity: 0.5;
+        }
+        30% {
+            opacity: 1;
+        }
+        35% {
+            opacity: 0.1;
+        }
+        40% {
+            opacity: 0.25;
+        }
+        45% {
+            opacity: 0.5;
+        }
+        60% {
+            opacity: 1;
+        }
+        70% {
+            opacity: 0.85;
+        }
+        80% {
+            opacity: 0.4;
+        }
+        90% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+        }
+
+        .balloon {
+        height: 125px;
+        width: 105px;
+        border-radius: 75% 75% 70% 70%;
+        position: relative;
+        }
+
+        .balloon:before {
+        content: "";
+        height: 75px;
+        width: 1px;
+        padding: 1px;
+        background-color: #FDFD96;
+        display: block;
+        position: absolute;
+        top: 125px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        }
+
+        .balloon:after {
+            content: "▲";
+            text-align: center;
+            display: block;
+            position: absolute;
+            color: inherit;
+            top: 120px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        @keyframes float {
+        from {transform: translateY(100vh);
+        opacity: 1;}
+        to {transform: translateY(-300vh);
+        opacity: 0;}
+        }
+    </style>
+    <script>
+        const btnCon = document.querySelector('#button-container')
+        const btn1 = document.querySelector('#btn-1')
+        const light = document.querySelector('#light')
+
+        let isOpen = false
+
+        btn1.addEventListener('mousemove', e => {
+        const { currentTarget: target } = e
+        const rect = target.getBoundingClientRect(),
+                x= e.clientX - rect.left,
+                y= e.clientY - rect.top
+
+        target.style.setProperty("--mouse-x", x+"px")
+        target.style.setProperty("--mouse-y", y+"px")
+        })
+
+        btn1.addEventListener('click', e => {
+        if(isOpen){    document.body.style.backgroundColor='white'
+            btn1.style.backgroundColor='white'
+            btn1.innerHTML='<input type="button" value="button"/>'
+            light.style.display='none'
+            document.querySelector('#btn-1').classList.remove('open')
+            document.querySelector('#btn-2').classList.remove('open')
+            isOpen = false
+        }
+        else{ document.body.style.backgroundColor='#000000'
+            btn1.style.backgroundColor='rgb(20,20,20)'
+            btn1.innerHTML='Pee ka boo!'
+            light.style.display='block'
+            document.querySelector('#btn-1').classList.add('open')
+            document.querySelector('#btn-2').classList.add('open')
+            isOpen = true
+        }
+        })
+    </script>
+</body>
+</html>
